@@ -1,0 +1,136 @@
+/* --- General Body and Font Styles --- */
+body {
+    /* CHANGED: Switched to a pale white background */
+    background-color: #f4f4f4;
+    /* CHANGED: Set default text color to black */
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* --- Header and Controls --- */
+header {
+    /* CHANGED: Suggested a new appealing blue background */
+    background-color: #4a90e2;
+    /* CHANGED: Text color in the header is now white for contrast */
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added a subtle shadow */
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+#optimizeButton {
+    /* A slightly darker blue for the button */
+    background-color: #357ABD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#optimizeButton:hover {
+    background-color: #2a6da8;
+}
+
+#optimizeButton:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+#status {
+    /* Made status text slightly transparent for a softer look */
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+}
+
+/* --- Main Content and Chart --- */
+main {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.chart-container {
+    width: 100%;
+    height: 90%;
+}
+
+.legend {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    padding-left: 50px;
+    font-size: 14px;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+.color-box {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+}
+.p1 { background-color: #e57373; }
+.p2 { background-color: #64b5f6; }
+.p3 { background-color: #81c784; }
+
+
+/* --- SVG Styles --- */
+.station-label {
+    /* CHANGED: Made station names black and bold */
+    fill: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.time-axis-label {
+    /* CHANGED: Set time label color */
+    fill: #555555;
+    font-size: 12px;
+}
+
+.time-axis-line {
+    /* CHANGED: Set axis line color to a light grey */
+    stroke: #cccccc;
+    stroke-width: 1;
+}
+
+.train-bar {
+    stroke-width: 1;
+    stroke: #333; /* Darker stroke for better visibility on white */
+    opacity: 0.9;
+    rx: 3;
+    ry: 3;
+    transition: opacity 0.2s;
+}
+.train-bar:hover {
+    opacity: 1;
+    stroke: #000;
+}
+
+.train-label {
+    fill: white;
+    font-size: 12px;
+    font-weight: bold;
+    pointer-events: none;
+    text-anchor: middle;
+}

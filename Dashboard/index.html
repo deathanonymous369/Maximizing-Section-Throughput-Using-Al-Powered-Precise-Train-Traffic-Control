@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Traffic Control Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Railway Traffic Control Dashboard</h1>
+        <div class="controls">
+            <button id="optimizeButton">Generate Optimized Schedule</button>
+            <p id="status">Ready. Click the button to start.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="chart-container">
+            <svg id="ganttChart"></svg>
+        </div>
+        <div class="legend">
+            <div class="legend-item"><span class="color-box p1"></span> High Priority (Express)</div>
+            <div class="legend-item"><span class="color-box p2"></span> Medium Priority (Passenger)</div>
+            <div class="legend-item"><span class="color-box p3"></span> Low Priority (Freight)</div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

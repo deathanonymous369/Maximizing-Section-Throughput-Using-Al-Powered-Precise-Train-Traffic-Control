@@ -1,0 +1,10 @@
+station_from,station_to,distance_km
+CSTM,DR,51.7
+DR,KYN,23.8
+KYN,KJT,25.8
+KJT,LNL,15.0
+LNL,TGN,52.8
+TGN,DVR,18.2
+DVR,KAD,44.4
+KAD,SVJR,23.9
+SVJR,PUNE,20.5

@@ -1,0 +1,7 @@
+train_id,station_code,arrival_time,departure_time,sequence
+Train_001,CSTM,10:00:00,10:05:00,1
+Train_001,DR,10:15:00,10:17:00,2
+Train_001,KYN,10:50:00,10:55:00,3
+Train_002,CSTM,10:10:00,10:15:00,1
+Train_002,DR,10:25:00,10:27:00,2
+Train_002,KYN,11:05:00,11:10:00,3
